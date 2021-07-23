@@ -13,7 +13,6 @@ class BFSTest(unittest.TestCase):
         g.add_edge(3, 3)
 
         actual = traverse(g, 2)
-        print(actual)
         expected = [2, 0, 3, 1]
 
         assert actual == expected
