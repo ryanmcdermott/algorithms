@@ -3,7 +3,7 @@ import heapq
 
 def djikstra(graph, start):
     distances = {node: float('inf') for node in graph}
-    distances['X'] = 0
+    distances[start] = 0
     pq = [(0, start)]
 
     while len(pq) > 0:
