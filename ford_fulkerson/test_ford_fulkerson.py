@@ -34,3 +34,8 @@ class FordFulkersonTest(TestCase):
         }
 
         assert ford_fulkerson(graph, 0, 5) == 23
+
+    def test_empty_graph(self):
+        graph = {0: {}}
+
+        assert ford_fulkerson(graph, 0, 0) == 0
